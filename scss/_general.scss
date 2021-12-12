@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 2s;
+}
+
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    -webkit-text-stroke: 0.75px black;
+}
+
+section {
+    padding: 2rem;
+    display: flex;
+}
+
+.marginPred {
+    margin: 5vh;
+}
+
+.columnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

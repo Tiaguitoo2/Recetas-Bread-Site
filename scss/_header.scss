@@ -1,0 +1,46 @@
+header {
+    margin: 2vh;
+
+    nav ul {
+        display        : flex;
+        flex-direction : row;
+        justify-content: center;
+        align-items    : center;
+        margin         : 0px;
+        padding        : 1rem 0rem 1rem 0rem;
+
+        li {
+            display: inline;
+            padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            font-family    : 'Alegreya Sans', sans-serif;
+            color          : #3A4553;
+        }
+
+        .logo {
+            padding        : 18px;
+            border         : #E94444 10px;
+            border-style   : double;
+            border-radius  : 100%;
+            display        : flex;
+            align-items    : center;
+
+            li {
+                padding: 0%; 
+            }
+
+            h1 {
+                font-family  : 'Dancing Script', cursive;
+                font-size     : 5vh;
+                font-weight  : 700;
+                color        : #3A4553;
+                margin       : 0px;
+                padding-right: 3px;
+            }
+        }
+    }
+}
+

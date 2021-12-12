@@ -1,0 +1,72 @@
+@media screen and (max-width: 922px) {
+    section {
+        padding: 2rem 0rem 2rem 2rem;
+    }
+
+    header nav ul .logo h1 {
+        font-size    : 5vh;
+        font-size    : 170%;
+        font-weight  : 700;
+        margin       : 0px;
+        padding-right: 0px;
+        text-align   : center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    a {
+        font-size: 90%;
+    }
+
+    .itemsFooter {
+        margin: 3%;
+    }
+
+    section {
+        flex-direction: column;
+        margin-bottom : 6vh;
+    }
+
+    header nav ul li {
+        padding: 0vh 2% 0vh 2%;
+    }
+
+    header nav ul .logo h1 {
+        font-size  : 4vh;
+        font-weight: 600px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    header nav ul {
+        padding: 0;
+
+        li {
+            padding: 0vh 0.8vh 0vh 0.8vh;
+        }
+
+        a {
+            font-size: 80%;
+        }
+
+        .logo h1 {
+            font-size  : 3.8vh;
+            font-weight: 500px;
+        }
+    }
+
+    #imgLogo {
+        height: 6vh;
+    }
+
+    footer nav div a {
+        font-size: 1.8vh;
+    }
+
+    .itemsFooter {
+        margin: 2%;
+    }
+}
