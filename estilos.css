@@ -93,7 +93,7 @@ section {
 }
 
 .pClass {
-    color: #f84c18; 
+    color: #E94444; 
     -webkit-text-stroke: 0.25px black;
     font-size: 3vh;
     font-weight: bold;
@@ -270,11 +270,22 @@ form button {
     flex-wrap: wrap;
 }
 
-/*SHOP*/
+/*CURSOS*/
 .cursosBox {
-    margin-left: 10%;
+    margin: 0 5% 5% 5%;
+    padding: 1% 5% 5% 5%;
+    background-color: #FFFFE0;
+opacity: 1;
+background-image:  radial-gradient(#E94444 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#E94444 0.8500000000000001px, #FFFFE0 0.8500000000000001px);
+background-size: 34px 34px;
+background-position: 0 0,17px 17px;
 }
 
+.cursosTitle {
+    width: fit-content;
+    margin-top: 10vh;
+    background-color: gold;
+}
 
 /*FOOTER*/
 
@@ -437,7 +448,7 @@ a:hover {
     }
 
     #ultimasBox {
-        display: flexbox;
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
