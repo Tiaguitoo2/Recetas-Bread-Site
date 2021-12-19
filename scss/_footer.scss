@@ -1,14 +1,14 @@
-.footerClass {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: $lightTomato;
-}
 
-.itemsFooter {
-    margin: 3vh 6vh 3vh 6vh;
-    text-decoration: none;
-    color: #3A4553;
-    background-color: $lightTomato;
+    &Items {
+        margin: 3vh 6vh 3vh 6vh;
+        text-decoration: none;
+        color: #3A4553;
+        background-color: $lightTomato;
+    }
 }

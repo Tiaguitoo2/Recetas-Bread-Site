@@ -6,6 +6,8 @@
     transition: 2s;
 }
 
+
+
 body {
     background-color: lightyellow;
 }
@@ -14,13 +16,26 @@ h1 {
     -webkit-text-stroke: 0.75px black;
 }
 
+h4 {
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
 section {
     padding: 2rem;
     display: flex;
 }
 
 .marginPred {
-    margin: 5vh;
+    margin: 3vw;
+}
+
+.relleno {
+    @extend .marginPred;
+    padding: 2vw;
 }
 
 .columnCenter {
@@ -28,4 +43,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*MIXINS*/
+@mixin imgRedonda ($ancho, $alto, $radio) {
+    width: $ancho;
+    height: $alto;
+    border-radius: $radio;
 }
