@@ -44,8 +44,18 @@ section {
     justify-content: center;
     align-items: center;
 }
+.card {
+    margin: 2vw 1vw 2vw 3vw;
+}
 
-/*MIXINS*/
+/*COLORES*/
+$tomato: #fd6347;
+$strongTomato: #E94444;
+$lightTomato: #fc8975;
+$negrito: #3A4553;
+$lightNegrito: #3a45537e;
+
+
 @mixin imgRedonda ($ancho, $alto, $radio) {
     width: $ancho;
     height: $alto;

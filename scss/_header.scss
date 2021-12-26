@@ -17,7 +17,7 @@ header {
         a {
             text-decoration: none;
             font-family    : 'Alegreya Sans', sans-serif;
-            color          : #3A4553;
+            color          : $negrito;
         }
 
         .logo {
@@ -36,7 +36,7 @@ header {
                 font-family  : 'Dancing Script', cursive;
                 font-size     : 5vh;
                 font-weight  : 700;
-                color        : #3A4553;
+                color        : $negrito;
                 margin       : 0px;
                 padding-right: 3px;
             }

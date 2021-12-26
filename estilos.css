@@ -154,7 +154,7 @@ section {
     height: auto;
 }
 
-div hr {
+.hrRed {
     margin: 5px;
     padding: 1px;
     background-color: #fd6347;
@@ -260,15 +260,7 @@ form button {
 
 /*REDES SOCIALES*/
 
-.boxMedia {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    height: 20%;
-    background-color: #fd6347;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 /*CURSOS*/
 .cursosBox {

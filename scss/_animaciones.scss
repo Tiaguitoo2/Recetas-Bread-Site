@@ -1,0 +1,9 @@
+/*ANIMACIONES*/
+a .liNav:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.card:hover {
+    transform: rotate(1deg) scale(1.08) translate(0px, -10px);
+}

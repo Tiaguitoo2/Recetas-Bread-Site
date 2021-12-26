@@ -1,0 +1,62 @@
+/*FORMULARIO DE CONTACTO*/
+
+.marginForm {
+    margin: 5vh;
+}
+
+.backgroundForm {
+    width: 70%;
+    align-items: center;
+    background-image: url("../images-render/Pan\ casero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    padding: 10%;
+    box-sizing: border-box;
+    border-radius: 7vh;
+}
+
+form h2{
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    @extend input;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+form button {
+    padding: 20px;
+}
+
+@media (max-width:700px) {
+    form {
+        width: 100%;
+    }
+    .backgroundForm {
+        width: 95%;
+    }
+    .marginForm {
+        margin: 0%;
+        margin-bottom: 5vh;
+    }
+}

@@ -11,6 +11,13 @@
         padding-right: 0px;
         text-align   : center;
     }
+
+    .home {
+        min-height: 0;
+        margin: 0;
+        background-size: none;
+        border-radius: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -19,13 +26,12 @@
         font-size: 90%;
     }
 
-    .itemsFooter {
+    .footerItems {
         margin: 3%;
     }
 
     section {
         flex-direction: column;
-        margin-bottom : 6vh;
     }
 
     header nav ul li {
@@ -35,6 +41,26 @@
     header nav ul .logo h1 {
         font-size  : 4vh;
         font-weight: 600px;
+    }
+
+    footer nav div a {
+        font-size: 2vw;
+    }
+
+    .sobreNosotros {
+        width       : 60%;
+        margin-right: 15%;
+    }
+    #manosAmasando {
+        @include imgRedonda (22vw, 22vw, 2vw);
+    }
+
+    .ultimasBox {
+        width: 100%;
+    }
+
+    .pClass {
+        width: 82%;
     }
 
 }
@@ -57,16 +83,34 @@
             font-weight: 500px;
         }
     }
+    
+}
 
-    #imgLogo {
-        height: 6vh;
+/*card ultimas recetas*/
+.ultimasBox {
+    @media screen and (min-width: 992px) {
+        .card-title {
+            font-size: 100%;
+        }
+
+        .card-text {
+            font-size: 52%;
+        }
     }
 
-    footer nav div a {
-        font-size: 1.8vh;
+    @media screen and (min-width: 1070px) {
+        .card-text {
+            font-size: 65%;
+        }
     }
 
-    .itemsFooter {
-        margin: 2%;
+    @media screen and (min-width: 1200px) {
+        .card-title {
+            font-size: 1.5vw;
+        }
+
+        .card-text {
+            font-size: 80%;
+        }
     }
 }
