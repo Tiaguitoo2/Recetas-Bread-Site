@@ -1,9 +1,32 @@
 /*ANIMACIONES*/
-a .liNav:hover {
+
+li:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+a:hover {
     transform: scale(1.05);
     transition: 1s;
 }
 
 .card:hover {
-    transform: rotate(1deg) scale(1.08) translate(0px, -10px);
+    transform: scale(1.08);
+    background-color: #fd624786;
+}
+
+.ulHeader {
+    a {
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.2s;
+    }
+
+    a:hover,
+    a:focus {
+        background-size: 100% 2px;
+    }
 }

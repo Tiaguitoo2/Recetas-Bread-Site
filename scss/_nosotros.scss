@@ -1,17 +1,32 @@
-
+/*NOSOTROS*/
 .bioClass {
+    align-items: center;
+    div p {
+        font-size: x-large;
+        font-style: italic;
+    }
+}
+
+.redesSocialesCondiciones {
+    flex-direction: column;
+    width: min-content;
+}
+.redesSocialesCondiciones div {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
     align-items: center;
 }
 
-.logo-2 {
-    @include imgRedonda (45%, 45%, 13%)
-}
-
 .condicionesClass {
-    background-color: #fc8975;
-    border-radius: 5vh;
-    margin: 5%;
+    flex-direction: column;
+    background-color: $lightTomato;
+    border-radius: 1vh;
+    padding: 5%;
+    width: 100%;
+    .container h1 {
+        text-align: center;
+        color: white;
+        margin-top: 2vw;
+        text-decoration: overline;
+    }
 }

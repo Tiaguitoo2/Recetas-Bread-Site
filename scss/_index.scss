@@ -1,100 +1,128 @@
+/*HOME INDEX*/
 .home {
-    min-height         : 50vw;
-    align-items        : center;
-    background-size    : cover;
-    background-image   : url("../images-render/Pan\ casero.jpg");
+    min-height: 40vw;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-image: url("../Images/panCasero.jpg");
     background-position: center;
-    @include imgRedonda (cover, cover, 5vw);
+    margin: 0rem 1rem 1rem 1rem;
+    @include imgRedonda (cover, cover, 1vw);
 }
-
-.pClass {
-    color              : #E94444;
-    -webkit-text-stroke: 0.25px black;
-    font-weight        : bold;
-    width              : 50%;
-    padding: 1vw;
-    border-radius: 1vw;
-    background-color: $lightNegrito;
+.homeText {
+    width: 70%;
+    margin: 2vw;
+    h1 {
+        font-family: "Cookie", cursive;
+        @include letra("Cookie", $negrito, 5vw, 100, rgba(255, 255, 255, 0.459));
+        border-radius: 1vw;
+        padding: 1vw;
+        width: fit-content;
+    }
+    p {
+        @include letra('Josefin Sans', white, 1.5vw, 100, $lightNegrito);
+        border-radius: 1vw;
+        padding: 1vw;
+    }
 }
 
 /*BARRA DE BUSQUEDA*/
-.boxSearch {
+.boxSearchIndex {
     margin: 7.5vw auto;
-    width : 300px;
+    width: 300px;
     height: 50px;
 }
 
 .container-1 {
-    width         : 300px;
+    width: 300px;
     vertical-align: middle;
-    white-space   : nowrap;
-    position      : relative;
+    white-space: nowrap;
+    position: relative;
 }
 
-.container-1 input#search {
-    width                : 300px;
-    height               : 50px;
-    background           : #ffcb6a;
-    border               : none;
-    font-size            : 15px;
-    float                : left;
-    color                : #63717f;
-    padding-left         : 45px;
+.container-1 input#search,
+.container-1 textarea#search {
+    width: 300px;
+    height: 50px;
+    background: #ffcb6a;
+    border: none;
+    font-size: 15px;
+    float: left;
+    color: $lightNegrito;
+    padding-left: 45px;
     -webkit-border-radius: 5px;
-    -moz-border-radius   : 5px;
-    border-radius        : 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
-.container-1 input#search::-webkit-input-placeholder {
-    color: #65737e;
+.container-1 input#search::-webkit-input-placeholder,
+.container-1 textarea#search::-webkit-input-placeholder {
+    color: $lightNegrito;
 }
 
-.container-1 input#search:-moz-placeholder {
-    color: #65737e;
+.container-1 input#search:-moz-placeholder,
+.container-1 textarea#search:-moz-placeholder {
+    color: $lightNegrito;
 }
 
-.container-1 input#search::-moz-placeholder {
-    color: #65737e;
+.container-1 input#search::-moz-placeholder,
+.container-1 textarea#search::-moz-placeholder {
+    color: $lightNegrito;
 }
 
-.container-1 input#search:-ms-input-placeholder {
-    color: #65737e;
+.container-1 input#search:-ms-input-placeholder,
+.container-1 textarea#search:-ms-input-placeholder {
+    color: $lightNegrito;
 }
 
-/**/
-
-.sobreNosotros {
-    width       : 25%;
-    margin-right: 5%;
-}
-
+/*RECETAS*/
 .hrRed {
-    margin          : 5px;
-    padding         : 1px;
+    margin: 5px;
+    padding: 1px;
     background-color: $tomato;
 }
 
-#manosAmasando {
-    @include imgRedonda (16vw, 16vw, 8vw);
-    margin: 2vw;
+.sobreNosotros {
+    width: 25%;
+    margin-right: 5%;
+}
+.sobreNosotros p {
+    padding: 1.5vw 1.5vw 0vw 1.5vw;
+    font-size: 1.65vw;
+    font-style: italic;
 }
 
-.ultimasBox {
+.ultimasRecetasBox {
     width: 70%;
+}
+.ultimasRecetasBox h1 {
+    text-align: right;
+}
+.ultimasRecetasBox .card-title,
+.ultimasRecetasBox .card-text {
+    margin: 1vw;
+    @include letra(sans-serif, white, normal, 100, $lightNegrito);
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    width: fit-content;
+}
+.ultimasRecetasBox .row div {
+    padding: 0;
 }
 
 /*MEJORES RECETAS*/
 #mejoresRecetas {
     flex-direction: column;
+    width: 90%;
+    margin-top: 6vw;
+}
+#mejoresRecetas .card-img-top {
+    margin-top: 1vw;
 }
 
-/*REDES INDEX*/
+/*REDES SOCIALES INDEX*/
 .boxMedia {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    height: 20%;
-    background-color: #fd6347;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: $tomato;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
 }

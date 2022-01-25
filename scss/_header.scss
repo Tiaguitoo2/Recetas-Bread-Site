@@ -1,46 +1,42 @@
+/*HEADER*/
+
 header {
-    margin: 2vh;
+    margin: 1vw;
+    h1 {
+        font-family: "Dancing Script", cursive;
+      }
+}
+.logo {
+    padding: 1.75vw;
+    border: $strongTomato 10px;
+    border-style: double;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo li {
+    padding: 0%;
+    display: inline;
+}
+.logo h1 {
+    color: $negrito;
+    margin: 0px;
+    padding-right: 1vw;
+}
 
-    nav ul {
-        display        : flex;
-        flex-direction : row;
-        justify-content: center;
-        align-items    : center;
-        margin         : 0px;
-        padding        : 1rem 0rem 1rem 0rem;
-
-        li {
-            display: inline;
-            padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-        }
-
-        a {
-            text-decoration: none;
-            font-family    : 'Alegreya Sans', sans-serif;
-            color          : $negrito;
-        }
-
-        .logo {
-            padding        : 18px;
-            border         : #E94444 10px;
-            border-style   : double;
-            border-radius  : 100%;
-            display        : flex;
-            align-items    : center;
-
-            li {
-                padding: 0%; 
-            }
-
-            h1 {
-                font-family  : 'Dancing Script', cursive;
-                font-size     : 5vh;
-                font-weight  : 700;
-                color        : $negrito;
-                margin       : 0px;
-                padding-right: 3px;
-            }
-        }
+.ulHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 1rem 0rem 1rem 0rem;
+    a {
+        font-size: large;
     }
 }
 
+.liHeader {
+    display: inline;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+}

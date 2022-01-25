@@ -8,89 +8,109 @@
 body {
   background-color: lightyellow; }
 
-h1 {
-  -webkit-text-stroke: 0.75px black; }
-
-h4 {
-  font-size: 2.5vw; }
-
-p {
-  font-size: 1.5vw; }
-
 section {
-  padding: 2rem;
   display: flex; }
 
-.marginPred, .relleno {
+.marginPred {
   margin: 3vw; }
 
-.relleno {
-  padding: 2vw; }
+.card {
+  margin: 2vw 0vw 0vw 4.5vw; }
 
-.columnCenter {
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.75vw; }
+
+a {
+  font-family: "Alegreya Sans" sans-serif;
+  color: #3a4553;
+  font-size: large;
+  font-weight: 400;
+  background: none;
+  text-decoration: none; }
+
+p {
+  font-family: "Josefin Sans" sans-serif;
+  color: #3a4553;
+  font-size: large;
+  font-weight: 350;
+  background: none; }
+
+/*HEADER*/
+header {
+  margin: 1vw; }
+  header h1 {
+    font-family: "Dancing Script", cursive; }
+
+.logo {
+  padding: 1.75vw;
+  border: #e94444 10px;
+  border-style: double;
+  border-radius: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center; }
 
-.card {
-  margin: 2vw 1vw 2vw 3vw; }
+.logo li {
+  padding: 0%;
+  display: inline; }
 
-/*COLORES*/
-header {
-  margin: 2vh; }
-  header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 1rem 0rem 1rem 0rem; }
-    header nav ul li {
-      display: inline;
-      padding: 0.5rem 2.5rem 0.5rem 2.5rem; }
-    header nav ul a {
-      text-decoration: none;
-      font-family: 'Alegreya Sans', sans-serif;
-      color: #3A4553; }
-    header nav ul .logo {
-      padding: 18px;
-      border: #E94444 10px;
-      border-style: double;
-      border-radius: 100%;
-      display: flex;
-      align-items: center; }
-      header nav ul .logo li {
-        padding: 0%; }
-      header nav ul .logo h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 5vh;
-        font-weight: 700;
-        color: #3A4553;
-        margin: 0px;
-        padding-right: 3px; }
+.logo h1 {
+  color: #3a4553;
+  margin: 0px;
+  padding-right: 1vw; }
 
+.ulHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 1rem 0rem 1rem 0rem; }
+  .ulHeader a {
+    font-size: large; }
+
+.liHeader {
+  display: inline;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem; }
+
+/*HOME INDEX*/
 .home {
-  min-height: 50vw;
+  min-height: 40vw;
+  display: flex;
   align-items: center;
   background-size: cover;
-  background-image: url("../images-render/Pan casero.jpg");
+  background-image: url("../Images/panCasero.jpg");
   background-position: center;
+  margin: 0rem 1rem 1rem 1rem;
   width: cover;
   height: cover;
-  border-radius: 5vw; }
-
-.pClass {
-  color: #E94444;
-  -webkit-text-stroke: 0.25px black;
-  font-weight: bold;
-  width: 50%;
-  padding: 1vw;
   border-radius: 1vw;
-  background-color: #3a455367; }
+  /**/ }
+
+.homeText {
+  width: 70%;
+  margin: 2vw; }
+  .homeText h1 {
+    font-family: "Cookie", cursive;
+    font-family: "Cookie";
+    color: #3a4553;
+    font-size: 5vw;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.459);
+    border-radius: 1vw;
+    padding: 1vw;
+    width: fit-content; }
+  .homeText p {
+    font-family: "Josefin Sans";
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 100;
+    background: #3a455367;
+    border-radius: 1vw;
+    padding: 1vw; }
 
 /*BARRA DE BUSQUEDA*/
-.boxSearch {
+.boxSearchIndex {
   margin: 7.5vw auto;
   width: 300px;
   height: 50px; }
@@ -101,94 +121,127 @@ header {
   white-space: nowrap;
   position: relative; }
 
-.container-1 input#search, .container-1 textarea#search {
+.container-1 input#search,
+.container-1 textarea#search {
   width: 300px;
   height: 50px;
   background: #ffcb6a;
   border: none;
   font-size: 15px;
   float: left;
-  color: #63717f;
+  color: #3a455367;
   padding-left: 45px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-.container-1 input#search::-webkit-input-placeholder, .container-1 textarea#search::-webkit-input-placeholder {
-  color: #65737e; }
+.container-1 input#search::-webkit-input-placeholder,
+.container-1 textarea#search::-webkit-input-placeholder {
+  color: #3a455367; }
 
-.container-1 input#search:-moz-placeholder, .container-1 textarea#search:-moz-placeholder {
-  color: #65737e; }
+.container-1 input#search:-moz-placeholder,
+.container-1 textarea#search:-moz-placeholder {
+  color: #3a455367; }
 
-.container-1 input#search::-moz-placeholder, .container-1 textarea#search::-moz-placeholder {
-  color: #65737e; }
+.container-1 input#search::-moz-placeholder,
+.container-1 textarea#search::-moz-placeholder {
+  color: #3a455367; }
 
-.container-1 input#search:-ms-input-placeholder, .container-1 textarea#search:-ms-input-placeholder {
-  color: #65737e; }
+.container-1 input#search:-ms-input-placeholder,
+.container-1 textarea#search:-ms-input-placeholder {
+  color: #3a455367; }
 
-/**/
-.sobreNosotros {
-  width: 25%;
-  margin-right: 5%; }
-
+/*RECETAS*/
 .hrRed {
   margin: 5px;
   padding: 1px;
   background-color: #fd6347; }
 
-#manosAmasando {
-  width: 16vw;
-  height: 16vw;
-  border-radius: 8vw;
-  margin: 2vw; }
+.sobreNosotros {
+  width: 25%;
+  margin-right: 5%; }
 
-.ultimasBox {
+.sobreNosotros p {
+  padding: 1.5vw 1.5vw 0vw 1.5vw;
+  font-size: 1.65vw;
+  font-style: italic; }
+
+.ultimasRecetasBox {
   width: 70%; }
+
+.ultimasRecetasBox h1 {
+  text-align: right; }
+
+.ultimasRecetasBox .card-title,
+.ultimasRecetasBox .card-text {
+  margin: 1vw;
+  font-family: sans-serif;
+  color: white;
+  font-size: normal;
+  font-weight: 100;
+  background: #3a455367;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  width: fit-content; }
+
+.ultimasRecetasBox .row div {
+  padding: 0; }
 
 /*MEJORES RECETAS*/
 #mejoresRecetas {
-  flex-direction: column; }
+  flex-direction: column;
+  width: 90%;
+  margin-top: 6vw; }
 
-/*REDES INDEX*/
+#mejoresRecetas .card-img-top {
+  margin-top: 1vw; }
+
+/*REDES SOCIALES INDEX*/
 .boxMedia {
-  margin-top: 5%;
-  margin-bottom: 10%;
-  height: 20%;
   background-color: #fd6347;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap; }
+  margin-top: 3vw;
+  margin-bottom: 6vw; }
 
+/*NOSOTROS*/
 .bioClass {
+  align-items: center; }
+  .bioClass div p {
+    font-size: x-large;
+    font-style: italic; }
+
+.redesSocialesCondiciones {
+  flex-direction: column;
+  width: min-content; }
+
+.redesSocialesCondiciones div {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
   align-items: center; }
 
-.logo-2 {
-  width: 45%;
-  height: 45%;
-  border-radius: 13%; }
-
 .condicionesClass {
+  flex-direction: column;
   background-color: #fc8975;
-  border-radius: 5vh;
-  margin: 5%; }
+  border-radius: 1vh;
+  padding: 5%;
+  width: 100%; }
+  .condicionesClass .container h1 {
+    text-align: center;
+    color: white;
+    margin-top: 2vw;
+    text-decoration: overline; }
 
 /*CURSOS*/
 .cursosBox {
-  margin: 0 5% 5% 5%;
-  padding: 1% 5% 5% 5%;
-  background-color: #FFFFE0;
-  opacity: 1;
-  background-image: radial-gradient(#E94444 0.85px, transparent 0.85px), radial-gradient(#E94444 0.85px, #FFFFE0 0.85px);
-  background-size: 34px 34px;
-  background-position: 0 0,17px 17px; }
+  flex-direction: column;
+  margin: 5% 5% 5% 5%; }
 
-.cursosTitle {
-  width: fit-content;
-  margin-top: 10vh;
-  background-color: gold; }
+.cursosBox .row {
+  padding-bottom: 3vw;
+  background-color: #ffffe0;
+  opacity: 1;
+  background-image: radial-gradient(#e94444 0.85px, transparent 0.85px), radial-gradient(#e94444 0.85px, #ffffe0 0.85px);
+  background-size: 34px 34px;
+  background-position: 0 0, 17px 17px; }
 
 /*FORMULARIO DE CONTACTO*/
 .marginForm {
@@ -197,7 +250,7 @@ header {
 .backgroundForm {
   width: 70%;
   align-items: center;
-  background-image: url("../images-render/Pan casero.jpg");
+  background-image: url("../Images/panCasero.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -247,86 +300,103 @@ form button {
   justify-content: center;
   align-items: center;
   background-color: #fc8975; }
-  .footerItems {
-    margin: 3vh 6vh 3vh 6vh;
-    text-decoration: none;
-    color: #3A4553;
-    background-color: #fc8975; }
+
+.footerItems {
+  margin: 3vh 6vh 3vh 6vh;
+  text-decoration: none;
+  color: #3a4553;
+  background-color: #fc8975; }
 
 /*ANIMACIONES*/
-a .liNav:hover {
+li:hover {
+  transform: scale(1.05);
+  transition: 1s; }
+
+a:hover {
   transform: scale(1.05);
   transition: 1s; }
 
 .card:hover {
-  transform: rotate(1deg) scale(1.08) translate(0px, -10px); }
+  transform: scale(1.08);
+  background-color: #fd624786; }
 
+.ulHeader a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.2s; }
+
+.ulHeader a:hover,
+.ulHeader a:focus {
+  background-size: 100% 2px; }
+
+/*MEDIA*/
 @media screen and (max-width: 922px) {
-  section {
-    padding: 2rem 2rem 0rem 2rem; }
-  header nav ul .logo h1 {
-    font-size: 5vh;
-    font-size: 170%;
-    font-weight: 700;
-    margin: 0px;
-    padding-right: 0px;
-    text-align: center; }
   .home {
     min-height: 0;
     margin: 0;
     background-size: none;
-    border-radius: 0; } }
+    border-radius: 0; }
+  .liHeader {
+    margin: 0vw 2vw 0vw 2vw;
+    padding: 0; } }
 
 @media screen and (max-width: 768px) {
-  a {
-    font-size: 90%; }
   .footerItems {
     margin: 3%; }
   section {
     flex-direction: column; }
-  header nav ul li {
-    padding: 0vh 2% 0vh 2%; }
-  header nav ul .logo h1 {
-    font-size: 4vh;
-    font-weight: 600px; }
-  footer nav div a {
-    font-size: 2vw; }
+  .ulHeader a {
+    font-size: medium; }
+  .footerItems {
+    font-size: medium; }
   .sobreNosotros {
     width: 60%;
     margin-right: 15%; }
-  #manosAmasando {
-    width: 22vw;
-    height: 22vw;
-    border-radius: 2vw; }
-  .ultimasBox {
-    width: 100%; }
-  .pClass {
-    width: 82%; } }
+  .condicionesClass p {
+    font-size: medium; }
+  .ultimasRecetasBox {
+    width: 95%; }
+  h1 {
+    font-size: 4vw; }
+  .homeText {
+    width: 90%; }
+    .homeText h1 {
+      font-size: 6vw; }
+    .homeText p {
+      font-size: 2.35vw; }
+  .sobreNosotros p {
+    font-size: 2.35vw; }
+  p {
+    font-size: 2.35vw; } }
+
+@media screen and (max-width: 673px) {
+  .ulHeader a {
+    font-size: 2.2vw; }
+  .logo h1 {
+    font-size: x-large; }
+  .logo li img {
+    width: 6vw; }
+  h1 {
+    font-size: xx-large; }
+  .bioClass div p {
+    font-size: medium; } }
+
+.card-title,
+h6,
+.card-text {
+  font-size: medium; }
+
+.ultimasRecetasBox .card-title,
+.ultimasRecetasBox .card-text {
+  margin: 0vw; }
 
 @media screen and (max-width: 576px) {
-  header nav ul {
-    padding: 0; }
-    header nav ul li {
-      padding: 0vh 0.8vh 0vh 0.8vh; }
-    header nav ul a {
-      font-size: 80%; }
-    header nav ul .logo h1 {
-      font-size: 3.8vh;
-      font-weight: 500px; } }
-
-/*card ultimas recetas*/
-@media screen and (min-width: 992px) {
-  .ultimasBox .card-title {
-    font-size: 100%; }
-  .ultimasBox .card-text {
-    font-size: 52%; } }
-
-@media screen and (min-width: 1070px) {
-  .ultimasBox .card-text {
-    font-size: 65%; } }
-
-@media screen and (min-width: 1200px) {
-  .ultimasBox .card-title {
-    font-size: 1.5vw; }
-  .ultimasBox .card-text {
-    font-size: 80%; } }
+  .ulHeader a {
+    font-size: 80%; }
+  .sobreNosotros p, .homeText P {
+    font-size: 2.35vw; }
+  p {
+    font-size: medium; } }

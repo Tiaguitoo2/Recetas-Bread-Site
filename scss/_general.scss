@@ -1,63 +1,58 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     text-decoration: none;
     box-sizing: border-box;
     transition: 2s;
-}
-
-
-
-body {
-    background-color: lightyellow;
-}
-
-h1 {
-    -webkit-text-stroke: 0.75px black;
-}
-
-h4 {
-    font-size: 2.5vw;
-}
-
-p {
-    font-size: 1.5vw;
-}
-
-section {
-    padding: 2rem;
-    display: flex;
-}
-
-.marginPred {
-    margin: 3vw;
-}
-
-.relleno {
-    @extend .marginPred;
-    padding: 2vw;
-}
-
-.columnCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.card {
-    margin: 2vw 1vw 2vw 3vw;
-}
-
-/*COLORES*/
-$tomato: #fd6347;
-$strongTomato: #E94444;
-$lightTomato: #fc8975;
-$negrito: #3A4553;
-$lightNegrito: #3a455367;
-
-
-@mixin imgRedonda ($ancho, $alto, $radio) {
+  }
+  
+  $strongTomato: #e94444;
+  $tomato: #fd6347;
+  $lightTomato: #fc8975;
+  $negrito: #3a4553;
+  $lightNegrito: #3a455367;
+  
+  @mixin imgRedonda($ancho, $alto, $radio) {
     width: $ancho;
     height: $alto;
     border-radius: $radio;
-}
+    /**/
+  }
+  
+  @mixin letra($fuente, $color, $size, $weight, $background) {
+    font-family: $fuente;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    background: $background;
+  }
+  
+  body {
+    background-color: lightyellow;
+  }
+  
+  section {
+    display: flex;
+  }
+  
+  .marginPred {
+    margin: 3vw;
+  }
+  
+  .card {
+    margin: 2vw 0vw 0vw 4.5vw;
+  }
+  
+  h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3.75vw;
+  }
+  
+  a {
+    @include letra('Alegreya Sans' sans-serif, $negrito, large, 400, none);
+    text-decoration: none;
+  }
+  
+  p {
+    @include letra('Josefin Sans' sans-serif, $negrito, large, 350, none)
+  }

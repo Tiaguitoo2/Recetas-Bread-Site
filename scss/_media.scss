@@ -1,31 +1,19 @@
+/*MEDIA*/
 @media screen and (max-width: 922px) {
-    section {
-        padding: 2rem 2rem 0rem 2rem;
-    }
-
-    header nav ul .logo h1 {
-        font-size    : 5vh;
-        font-size    : 170%;
-        font-weight  : 700;
-        margin       : 0px;
-        padding-right: 0px;
-        text-align   : center;
-    }
-
     .home {
         min-height: 0;
         margin: 0;
         background-size: none;
         border-radius: 0;
     }
+
+    .liHeader {
+        margin: 0vw 2vw 0vw 2vw;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
-    a {
-        font-size: 90%;
-    }
-
     .footerItems {
         margin: 3%;
     }
@@ -34,83 +22,95 @@
         flex-direction: column;
     }
 
-    header nav ul li {
-        padding: 0vh 2% 0vh 2%;
+    .ulHeader a {
+        font-size: medium;
     }
 
-    header nav ul .logo h1 {
-        font-size  : 4vh;
-        font-weight: 600px;
-    }
-
-    footer nav div a {
-        font-size: 2vw;
+    .footerItems {
+        font-size: medium;
     }
 
     .sobreNosotros {
-        width       : 60%;
+        width: 60%;
         margin-right: 15%;
     }
-    #manosAmasando {
-        @include imgRedonda (22vw, 22vw, 2vw);
+    .condicionesClass p {
+        font-size: medium;
     }
 
-    .ultimasBox {
-        width: 100%;
+    .ultimasRecetasBox {
+        width: 95%;
     }
 
-    .pClass {
-        width: 82%;
+    h1 {
+        font-size: 4vw;
     }
 
+    .homeText {
+        width: 90%;
+        h1 {
+            font-size: 6vw;
+        }
+        p {
+            font-size: 2.35vw;
+        }
+    }
+
+    .sobreNosotros p{
+        font-size: 2.35vw;
+        }
+
+        p{
+            font-size: 2.35vw;
+        }
+}
+
+@media screen and (max-width: 673px) {
+    .ulHeader a {
+        font-size: 2.2vw;
+    }
+
+    .logo {
+        h1 {
+            font-size: x-large;
+        }
+        li img {
+            width: 6vw;
+        }
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .bioClass div p{
+        font-size: medium;
+    }
+}
+
+.card-title,
+h6,
+.card-text {
+    font-size: medium;
+}
+
+.ultimasRecetasBox .card-title,
+.ultimasRecetasBox .card-text {
+    margin: 0vw;
 }
 
 @media screen and (max-width: 576px) {
-
-    header nav ul {
-        padding: 0;
-
-        li {
-            padding: 0vh 0.8vh 0vh 0.8vh;
-        }
-
+    .ulHeader {
         a {
             font-size: 80%;
         }
-
-        .logo h1 {
-            font-size  : 3.8vh;
-            font-weight: 500px;
-        }
-    }
-    
-}
-
-/*card ultimas recetas*/
-.ultimasBox {
-    @media screen and (min-width: 992px) {
-        .card-title {
-            font-size: 100%;
-        }
-
-        .card-text {
-            font-size: 52%;
-        }
     }
 
-    @media screen and (min-width: 1070px) {
-        .card-text {
-            font-size: 65%;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        .card-title {
-            font-size: 1.5vw;
+    .sobreNosotros p, .homeText P{
+        font-size: 2.35vw;
         }
 
-        .card-text {
-            font-size: 80%;
-        }
+    p{
+        font-size: medium;
     }
 }

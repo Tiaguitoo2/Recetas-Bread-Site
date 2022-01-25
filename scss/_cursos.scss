@@ -1,16 +1,11 @@
 /*CURSOS*/
 .cursosBox {
-    margin: 0 5% 5% 5%;
-    padding: 1% 5% 5% 5%;
-    background-color: #FFFFE0;
-opacity: 1;
-background-image:  radial-gradient(#E94444 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#E94444 0.8500000000000001px, #FFFFE0 0.8500000000000001px);
-background-size: 34px 34px;
-background-position: 0 0,17px 17px;
-}
-
-.cursosTitle {
-    width: fit-content;
-    margin-top: 10vh;
-    background-color: gold;
-}
+    flex-direction: column;
+    margin: 5% 5% 5% 5%; }
+    .cursosBox .row {
+      padding-bottom: 3vw;
+      background-color: #ffffe0;
+      opacity: 1;
+      background-image: radial-gradient($strongTomato 0.85px, transparent 0.85px), radial-gradient($strongTomato 0.85px, #ffffe0 0.85px);
+      background-size: 34px 34px;
+      background-position: 0 0, 17px 17px; }
